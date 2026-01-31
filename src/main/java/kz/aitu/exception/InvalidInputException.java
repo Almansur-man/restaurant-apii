@@ -1,4 +1,7 @@
 package kz.aitu.exception;
 
-public class InvalidInputException {
+public class InvalidInputException extends RuntimeException {
+    public InvalidInputException(String message) {
+        super(message);
+    }
 }
